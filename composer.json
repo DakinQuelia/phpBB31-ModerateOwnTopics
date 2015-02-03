@@ -1,0 +1,28 @@
+{
+	"name": "dakinquelia/moderateowntopics",
+	"type": "phpbb-extension",
+	"description": "This extension allows you assign permission to moderate (edit and delete) posts in the topics where the user is the topic starter.",
+	"homepage": "http://www.github.com/dakinquelia/moderateowntopics",
+	"version": "1.0.0-RC1",
+	"keywords": ["phpbb", "extension", "moderate"],
+	"time": "2014-08-17",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Daniel Chalseche (dakinquelia)",
+			"email": "dakinquelia@gmail.com",
+			"homepage": "http://www.danielchalseche.fr.cr/",
+			"role": "Extension Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3",
+		"composer/installers": "~1.0"
+	},
+	"extra": {
+		"display-name": "Moderate Own Topics",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0-RC3,<3.2.*@dev"
+		}
+	}
+}

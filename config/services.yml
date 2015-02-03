@@ -1,0 +1,14 @@
+services:
+    dakinquelia.moderateowntopics.listener:
+        class: dakinquelia\moderateowntopics\event\listener
+        arguments:
+            - @controller.helper
+            - @auth              
+            - @template
+            - @user
+            - @config
+            - @request
+            - %core.root_path%
+            - %core.php_ext%
+        tags:
+            - { name: event.listener }
