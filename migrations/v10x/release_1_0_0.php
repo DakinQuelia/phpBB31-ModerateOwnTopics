@@ -25,12 +25,10 @@ class release_1_0_0 extends \phpbb\db\migration\migration
 	{
 		return array(
 			// Add permission
-			array('permission.add', array('f_author', false)),
-		//	array('permission.add', array('f_moderate_own_topics', false)),
+			array('permission.add', array('f_moderate_own_topics', false)),
 
 			// Set permissions
-			array('permission.permission_set', array('ROLE_FORUM_FULL', 'f_author')),
-		//	array('permission.permission_set', array('ROLE_FORUM_FULL', 'f_moderate_own_topics')),
+			array('permission.permission_set', array('ROLE_FORUM_FULL', 'f_moderate_own_topics')),
 		);
 	}
 }
