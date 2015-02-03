@@ -264,8 +264,7 @@ class listener implements EventSubscriberInterface
 	public function add_permission($event)
 	{
 		$permissions = $event['permissions'];
-		$permissions['f_author'] = array('lang' => 'ACL_F_MODERATE_OWN_TOPICS', 'cat' => 'misc');
-		//$permissions['f_moderate_own_topics'] = array('lang' => 'ACL_F_MODERATE_OWN_TOPICS', 'cat' => 'misc');
+		$permissions['f_moderate_own_topics'] = array('lang' => 'ACL_F_MODERATE_OWN_TOPICS', 'cat' => 'misc');
 		$event['permissions'] = $permissions;
 	}
 }
